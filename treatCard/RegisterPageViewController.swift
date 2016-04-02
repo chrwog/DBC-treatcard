@@ -25,6 +25,8 @@ class RegisterPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     @IBAction func registerButtonTapped(sender: AnyObject) {
         
         let userEmail = userEmailTextField.text;
@@ -47,9 +49,9 @@ class RegisterPageViewController: UIViewController {
             return;
         }
         
-        // Store data
+//        // Store data
         NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey: "userEmail");
-        NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey: "userPassword");
+        NSUserDefaults.standardUserDefaults().setObject(userPassword, forKey: "userPassword");
         NSUserDefaults.standardUserDefaults().synchronize();
         
         
@@ -62,7 +64,17 @@ class RegisterPageViewController: UIViewController {
         
         myAlert.addAction(okAction);
         self.presentViewController(myAlert, animated: true, completion: nil);
-    
+        
+        
+        
+        // Send User data to server side
+        
+//        let myUrl = NSURL(string: "https://herokuapp.com/users/")
+//        let request = NSMutableURLRequest(URL: myUrl!)
+//        request.HTTPMethod = "POST"
+//        
+//        let postString = "email=\(userEmail)&password=\(userPassword)"
+//        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding);
         
     }
     
