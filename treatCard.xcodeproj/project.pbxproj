@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		302576FF88DE496C136EEB78 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4655852ECB1C3A2EA7D1BB15 /* Pods.framework */; };
+		86A2D6381CAF66D500AE246C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2D6371CAF66D500AE246C /* RegisterViewController.swift */; };
 		AE70C2981CAF1F3200BECC7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE70C2971CAF1F3200BECC7A /* AppDelegate.swift */; };
 		AE70C29A1CAF1F3200BECC7A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE70C2991CAF1F3200BECC7A /* FirstViewController.swift */; };
 		AE70C29C1CAF1F3200BECC7A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE70C29B1CAF1F3200BECC7A /* SecondViewController.swift */; };
@@ -40,6 +41,7 @@
 		1E6CE44BA8E480ECF93D38FA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3F463168583961931BB5943D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4655852ECB1C3A2EA7D1BB15 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86A2D6371CAF66D500AE246C /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AE70C2941CAF1F3200BECC7A /* treatCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = treatCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE70C2971CAF1F3200BECC7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE70C2991CAF1F3200BECC7A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				AE70C2971CAF1F3200BECC7A /* AppDelegate.swift */,
 				AE70C2991CAF1F3200BECC7A /* FirstViewController.swift */,
 				AE70C29B1CAF1F3200BECC7A /* SecondViewController.swift */,
+				86A2D6371CAF66D500AE246C /* RegisterViewController.swift */,
 				AE70C29D1CAF1F3200BECC7A /* Main.storyboard */,
 				AE70C2A01CAF1F3200BECC7A /* Assets.xcassets */,
 				AE70C2A21CAF1F3200BECC7A /* LaunchScreen.storyboard */,
@@ -344,6 +347,7 @@
 				AE70C29C1CAF1F3200BECC7A /* SecondViewController.swift in Sources */,
 				AE70C2981CAF1F3200BECC7A /* AppDelegate.swift in Sources */,
 				AE70C29A1CAF1F3200BECC7A /* FirstViewController.swift in Sources */,
+				86A2D6381CAF66D500AE246C /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
