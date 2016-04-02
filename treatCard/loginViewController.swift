@@ -33,13 +33,33 @@ class loginViewController: UIViewController {
         let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword");
         
         if(userEmailStored == userEmail) {
+            
             if(userPasswordStored == userPassword) {
                 // Login successful
                 NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn");
                 NSUserDefaults.standardUserDefaults().synchronize();
                 self.dismissViewControllerAnimated(true, completion: nil);
             }
+        } else {
+            
+            displayMyAlertMessage("Email or Password incorrect! Please try again.");
+            
         }
+        
+    }
+    
+    func displayMyAlertMessage(userMessage:String) {
+        
+        let myAlert = UIAlertController(title: "Warning", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert);
+        
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil);
+        
+        myAlert.addAction(okAction);
+        
+        self.presentViewController(myAlert, animated: true, completion: nil);
+        
+        
+        
         
     }
     
